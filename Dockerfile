@@ -1,4 +1,4 @@
-FROM mirror.gcr.io/golang:1.21 AS builder
+FROM mirror.gcr.io/golang:1.22 AS builder
 WORKDIR /build
 COPY go.mod go.sum ./
 RUN go mod download 
